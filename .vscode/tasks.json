@@ -1,0 +1,31 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=733558
+	// for the documentation about the tasks.json format
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "SPA Compiler",
+			"type": "npm",
+			"script": "hot",
+			"problemMatcher": []
+		},
+		{
+			"label": "API Server",
+			"type": "shell",
+			"command": "php artisan serve",
+			"group": "none",
+			"presentation": {
+				"reveal": "always"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "All",
+			"dependsOn": [
+				"SPA Compiler",
+				"API Server"
+			],
+			"problemMatcher": []
+		}
+	]
+}
