@@ -5,15 +5,15 @@
 ## Instalación
 
 1. Instalar deps
-	```
-	$ npm install 
-	$ composer install
-	```
+```
+$ npm install 
+$ composer install
+```
 2. Config BD .env
 3. Seed
-	```
-	$ php artisan migrate:fresh --seed
-	```
+```
+$ php artisan migrate:fresh --seed
+```
 
 ## Desarrollo	
 
